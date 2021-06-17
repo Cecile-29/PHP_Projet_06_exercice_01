@@ -16,7 +16,7 @@
         <a class="mr-3" href="index.php">cliquez pour revenir au formulaire</a>
             <?php 
                 // var_dump($_POST);
-                echo 'NOM : '. $_POST['name']. '  '. 'PRÉNOM : '. '  '. $_POST['firstName'];
+                echo 'NOM : '. htmlspecialchars($_POST['name']). '  '. 'PRÉNOM : '. '  '. htmlspecialchars($_POST['firstName']);
             ?>
         </div>
     </div>
